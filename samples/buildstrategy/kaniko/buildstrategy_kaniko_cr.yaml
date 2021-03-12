@@ -7,7 +7,6 @@ spec:
   buildSteps:
     - name: build-and-push
       image: gcr.io/kaniko-project/executor:v1.5.1
-      workingDir: /workspace/source
       securityContext:
         runAsUser: 0
         capabilities:
